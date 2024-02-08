@@ -1,0 +1,26 @@
+/* BASE */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,600,700);
+@import "./base/animations";
+@import "./base/mixins";
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/navIcon";
+
+/* BASE */
+
+/* BLOCK */
+
+@import './blocks/header';
+@import './blocks/hero';
+@import './blocks/heroImages';
+@import './blocks/swiperTheme';
+@import './blocks/swiperThemeAnimations';
+@import './blocks/sponsors';
+
+@import './blocks/swiper';
+
+
+
+/* BLOCK */

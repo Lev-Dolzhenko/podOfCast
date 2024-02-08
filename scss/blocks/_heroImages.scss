@@ -1,0 +1,41 @@
+.container_hero {
+  position: relative;
+}
+
+.hero__vector {
+  position: absolute;
+  left: -304px;
+  top: 70px;
+  z-index: -1;
+}
+
+.hero__stars {
+  position: absolute;
+  width: 100%;
+  max-width: 155px;
+  height: 100%;
+  max-height: 216px;
+  right: 65px;
+  top: 235px;
+
+  z-index: -1;
+
+  img {
+    position: absolute;
+  }
+}
+
+#starBlue {
+  left: 0;
+  top: 0;
+}
+
+#starRed {
+  right: 0;
+  top: 135px;
+}
+
+#starBlack {
+  left: 10px;
+  bottom: 0px;
+}

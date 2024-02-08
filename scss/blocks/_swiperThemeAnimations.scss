@@ -1,0 +1,49 @@
+.svg_slideTheme {
+  position: absolute;
+}
+
+.svg_slideWoman {
+  left: 46%;
+  bottom: 26%;
+}
+
+.path_slideWoman {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear alternate infinite;
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.svg_slideWomen {
+  left: 39%;
+  bottom: 36%;
+}
+
+.path_slideWomen {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear alternate infinite;
+}
+
+.path_heroVector {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: heroVector 1.5s linear forwards;
+
+  @keyframes heroVector {
+    from {
+      stroke-dashoffset: 3000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}

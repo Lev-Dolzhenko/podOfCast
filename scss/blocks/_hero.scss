@@ -1,0 +1,55 @@
+.hero {
+  margin-bottom: 120px;
+}
+
+.hero__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  max-width: 550px;
+
+  margin-bottom: 40px;
+}
+
+.title1 {
+}
+.title1_hero {
+}
+
+.hero__subtitle {
+  max-width: 313px;
+
+  margin-bottom: 60px;
+}
+
+.subtitleP {
+}
+.subtitleP_hero {
+}
+
+.hero__button {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    background-color: $colorBlack;
+
+    padding: 24px 48px;
+
+    color: $colorWhite;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+
+    transition: box-shadow 0.1s linear;
+
+    &:hover {
+      box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

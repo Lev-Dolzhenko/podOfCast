@@ -1,0 +1,71 @@
+body {
+  font-family: $montserrat;
+  // color: ;
+  font-size: 16px;
+  background-color: $colorBg;
+}
+
+a {
+  transition: color 0.2s linear;
+
+  &:hover {
+    // color: $fff;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+
+.title1 {
+  color: $colorBlack;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 100%;
+
+  &_hero {
+    text-align: center;
+    span {
+      color: $colorAccent;
+    }
+  }
+}
+
+.titleH2 {
+  // font-size: clamp();
+  // font-weight: ;
+  // line-height: ;
+}
+
+.titleH3 {
+  // font-size: clamp();
+  // font-weight: ;
+  // line-height: ;
+}
+
+.title5 {
+  &_them {
+    color: $colorNamePodcast;
+    font-size: 36.65px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+}
+
+.subtitleP {
+  color: $colorBlack;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+
+  &_hero {
+    text-align: center;
+    color: $colorBlackMuted;
+  }
+}

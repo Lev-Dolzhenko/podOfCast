@@ -1,0 +1,33 @@
+.sponsors {
+    margin-bottom: 140px;
+}
+
+.sponsors__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+//   column-gap: 132px;
+
+  padding: 20px 0;
+
+  border-top: 1.5px solid $colorBlackMuted;
+  border-bottom: 1.5px solid $colorBlackMuted;
+}
+.sponsors__text {
+  color: $colorBlack;
+  font-size: 22.65px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.sponsors__row {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.sponsors__row_block {
+display: flex;
+justify-content: center;
+  padding: 20px 30px;
+
+  width: 275px;
+}

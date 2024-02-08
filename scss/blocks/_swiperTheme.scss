@@ -1,0 +1,49 @@
+.swiper_theme {
+    margin-bottom: 120px;
+}
+
+.swiper-slide_theme {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  max-width: 373px;
+  height: 373px;
+
+  border-radius: 12px;
+
+  padding: 20px;
+}
+
+#slideWoman {
+  background-image: url(./../../content/main/slider/imageWoman.jpeg);
+}
+
+
+
+#slideWomen {
+    background-image: url(./../../content/main/slider/imageWomen.jpeg);
+}
+
+#slideMan {
+    background-image: url(./../../content/main/slider/imageMan.jpeg);
+}
+
+#slideBasket {
+    background-image: url(./../../content/main/slider/imageBusket.jpeg);
+}
+
+#slideCar {
+    background-image: url(./../../content/main/slider/imageCar.jpeg);
+}
+
+.theme__row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 240px;
+}
+.them__icons {
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+}
