@@ -151,6 +151,13 @@ a {
   text-align: center;
 }
 
+.title4 {
+  color: rgb(0, 0, 0);
+  font-size: 22.65px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
 .title5_them {
   color: rgb(129, 173, 200);
   font-size: 36.65px;
@@ -183,6 +190,9 @@ a {
   font-size: 22.65px;
   font-weight: 500;
   line-height: 160%;
+}
+.subtitleP_features {
+  text-align: center;
 }
 
 .nav-icon-btn {
@@ -1324,6 +1334,96 @@ a {
 .swiper-button-next-testimonials:hover svg path,
 .swiper-button-prev-testimonials:hover svg path {
   stroke: rgb(205, 70, 49);
+}
+
+.features {
+  padding: 140px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.features__title {
+  margin-bottom: 20px;
+}
+
+.features__subtitleP {
+  margin-bottom: 100px;
+}
+
+.features__image_scribble {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.features__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.features__button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  padding: 24px 48px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  -webkit-transition: -webkit-box-shadow 0.1s linear;
+  transition: -webkit-box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
+}
+.features__button button:hover {
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.features__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 80px;
+  margin-bottom: 100px;
+}
+
+.features__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 17px;
+}
+
+.features__card-image {
+  margin-bottom: 30px;
+}
+
+.features__card-title {
+  margin-bottom: 10px;
 }
 
 .swiper {

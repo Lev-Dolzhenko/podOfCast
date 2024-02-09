@@ -1,0 +1,52 @@
+.features {
+  padding: 140px 0;
+
+  background-color: $colorWhite;
+}
+
+.features__title {
+  margin-bottom: 20px;
+}
+.title2 {
+}
+.title2_features {
+}
+.features__subtitleP {
+  margin-bottom: 100px;
+}
+.subtitleP {
+}
+.subtitleP_features {
+}
+
+.features__image_scribble {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.features__button {
+   display: flex;
+   justify-content: center;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    background-color: $colorBlack;
+
+    padding: 24px 48px;
+
+    color: $colorWhite;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+
+    transition: box-shadow 0.1s linear;
+
+    &:hover {
+      box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 80px;
+
+  margin-bottom: 100px;
+}
+.features__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  align-self: flex-end;
+
+  padding: 0 17px;
+
+}
+.features__card-image {
+  margin-bottom: 30px;
+}
+.features__card-title {
+  margin-bottom: 10px;
+}
+.title4 {
+}
+.title4_features {
+}
+.features__card_subtitle {
+}
+.subtitleP {
+}
+.subtitleP_features {
+}
+

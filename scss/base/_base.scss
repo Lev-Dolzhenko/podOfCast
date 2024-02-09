@@ -60,6 +60,13 @@ a {
   text-align: center;
 }
 
+.title4 {
+  color: $colorBlack;
+  font-size: 22.65px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
 .title5 {
   &_them {
     color: $colorNamePodcast;
@@ -97,5 +104,9 @@ a {
     font-size: 22.65px;
     font-weight: 500;
     line-height: 160%;
+  }
+
+  &_features {
+    text-align: center;
   }
 }
