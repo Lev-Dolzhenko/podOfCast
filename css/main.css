@@ -129,6 +129,14 @@ a {
   color: rgb(205, 70, 49);
 }
 
+.title2 {
+  color: rgb(0, 0, 0);
+  font-size: 59.3px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+}
+
 .title5_them {
   color: rgb(129, 173, 200);
   font-size: 36.65px;
@@ -145,6 +153,9 @@ a {
 .subtitleP_hero {
   text-align: center;
   color: rgb(77, 77, 77);
+}
+.subtitleP_about {
+  text-align: center;
 }
 
 .nav-icon-btn {
@@ -518,6 +529,148 @@ a {
           animation: dash 3s linear alternate infinite;
 }
 
+.svg_quiestion-one {
+  left: 25%;
+  top: 32%;
+  -webkit-animation: quiestionAnimOne 1s ease-in alternate infinite;
+          animation: quiestionAnimOne 1s ease-in alternate infinite;
+}
+@-webkit-keyframes quiestionAnimOne {
+  from {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+@keyframes quiestionAnimOne {
+  from {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+.svg_quiestion-two {
+  left: 17%;
+  top: 36%;
+  -webkit-transform: rotate(-26deg);
+          transform: rotate(-26deg);
+  -webkit-animation: quiestionAnimTwo 0.5s ease-in alternate infinite;
+          animation: quiestionAnimTwo 0.5s ease-in alternate infinite;
+}
+@-webkit-keyframes quiestionAnimTwo {
+  from {
+    -webkit-transform: rotate(-26deg);
+            transform: rotate(-26deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+@keyframes quiestionAnimTwo {
+  from {
+    -webkit-transform: rotate(-26deg);
+            transform: rotate(-26deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+.svg_vectorMan {
+  left: 48%;
+  top: 56%;
+  -webkit-animation: vectorManAnim 0.5s linear alternate infinite;
+          animation: vectorManAnim 0.5s linear alternate infinite;
+}
+@-webkit-keyframes vectorManAnim {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes vectorManAnim {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.svg_vectorOneBakset {
+  left: 12%;
+  top: 32%;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  -webkit-animation: vectorBakset 1s linear alternate infinite;
+          animation: vectorBakset 1s linear alternate infinite;
+}
+@-webkit-keyframes vectorBakset {
+  from {
+    stroke-dashoffset: 220;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes vectorBakset {
+  from {
+    stroke-dashoffset: 220;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg_vectorTwoBakset {
+  left: 11%;
+  top: 41%;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  -webkit-animation: vectorBakset 1s linear alternate infinite;
+          animation: vectorBakset 1s linear alternate infinite;
+}
+
+.svg_vectorCar {
+  left: 15%;
+  top: 56%;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  -webkit-animation: vectorCarAnim 0.5s linear alternate infinite;
+          animation: vectorCarAnim 0.5s linear alternate infinite;
+}
+@-webkit-keyframes vectorCarAnim {
+  from {
+    stroke-dashoffset: 600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes vectorCarAnim {
+  from {
+    stroke-dashoffset: 600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .path_heroVector {
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
@@ -535,6 +688,32 @@ a {
 @keyframes heroVector {
   from {
     stroke-dashoffset: 3000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.path_heroVector-boom {
+  fill: none;
+  stroke: rgb(205, 70, 49);
+  stroke-width: 1px;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  -webkit-animation: heroVectorBoom 1.5s linear forwards;
+          animation: heroVectorBoom 1.5s linear forwards;
+}
+@-webkit-keyframes heroVectorBoom {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes heroVectorBoom {
+  from {
+    stroke-dashoffset: 250;
   }
   to {
     stroke-dashoffset: 0;
@@ -588,6 +767,282 @@ a {
           justify-content: center;
   padding: 20px 30px;
   width: 275px;
+}
+
+.about {
+  padding: 140px 0;
+}
+
+.about__title {
+  max-width: 775px;
+  margin: 0 auto 100px;
+}
+
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 200px;
+     -moz-column-gap: 200px;
+          column-gap: 200px;
+}
+
+.about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 40px;
+}
+
+.about__item-images {
+  position: relative;
+  max-width: 275px;
+  width: 100%;
+  height: 275px;
+}
+
+.svg_about {
+  position: absolute;
+}
+
+.svg_man {
+  left: 43px;
+  bottom: 16px;
+  -webkit-animation: manAnim 1s ease-out forwards;
+          animation: manAnim 1s ease-out forwards;
+}
+@-webkit-keyframes manAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes manAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.svg_cloudOne {
+  left: 120px;
+  bottom: 104px;
+  -webkit-animation: cloudAnim 1s linear forwards;
+          animation: cloudAnim 1s linear forwards;
+}
+@-webkit-keyframes cloudAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes cloudAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.svg_cloudTwo {
+  left: 152px;
+  bottom: 108px;
+  -webkit-animation: cloudAnim 1s linear forwards;
+          animation: cloudAnim 1s linear forwards;
+}
+
+.svg_largeCloud {
+  right: 0;
+  top: 0;
+  -webkit-animation: cloudAnim 1s ease-in forwards;
+          animation: cloudAnim 1s ease-in forwards;
+}
+
+.svg_qOne {
+  right: 60px;
+  top: 34px;
+}
+
+.svg_q-path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  -webkit-animation: q-pathAnim 2s ease-in alternate infinite;
+          animation: q-pathAnim 2s ease-in alternate infinite;
+}
+@-webkit-keyframes q-pathAnim {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes q-pathAnim {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg_qTwo {
+  right: 91px;
+  top: 63px;
+}
+
+.svg_vector-one {
+  top: 30px;
+  left: 129px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: vector-pathAnim 3s linear alternate infinite;
+          animation: vector-pathAnim 3s linear alternate infinite;
+}
+@-webkit-keyframes vector-pathAnim {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes vector-pathAnim {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg_vector-two {
+  left: 126px;
+  top: 94px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: vector-pathAnim 3s linear alternate infinite;
+          animation: vector-pathAnim 3s linear alternate infinite;
+}
+
+.svg_vector-three {
+  top: 55px;
+  right: 21px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: vector-pathAnim 9s linear alternate infinite;
+          animation: vector-pathAnim 9s linear alternate infinite;
+}
+
+.svg_vector-four {
+  top: 87px;
+  right: 11px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  -webkit-animation: vector-fourAnim 9s linear alternate infinite;
+          animation: vector-fourAnim 9s linear alternate infinite;
+}
+@-webkit-keyframes vector-fourAnim {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes vector-fourAnim {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg_vector-five {
+  right: 25px;
+  top: 93px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: vector-pathAnim 4s linear alternate infinite;
+          animation: vector-pathAnim 4s linear alternate infinite;
+}
+
+.svg_lamp {
+  position: absolute;
+  left: 63px;
+  top: 58px;
+}
+
+.svg_lamp_main-path {
+  -webkit-animation: turnLampMain 1s linear alternate infinite;
+          animation: turnLampMain 1s linear alternate infinite;
+}
+@-webkit-keyframes turnLampMain {
+  from {
+    stroke: grey;
+  }
+  to {
+    stroke: #ffd700;
+  }
+}
+@keyframes turnLampMain {
+  from {
+    stroke: grey;
+  }
+  to {
+    stroke: #ffd700;
+  }
+}
+
+.svg_lamp_second-path {
+  -webkit-animation: turnLampSecond 1s linear alternate infinite;
+          animation: turnLampSecond 1s linear alternate infinite;
+}
+@-webkit-keyframes turnLampSecond {
+  from {
+    stroke: grey;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    stroke: #ffd700;
+  }
+}
+@keyframes turnLampSecond {
+  from {
+    stroke: grey;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    stroke: #ffd700;
+  }
 }
 
 .swiper {

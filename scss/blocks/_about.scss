@@ -1,0 +1,28 @@
+.about {
+  padding: 140px 0;
+}
+
+.about__title {
+  max-width: 775px;
+
+  margin: 0 auto 100px;
+}
+
+.about__row {
+    display: flex;
+    align-items: center;
+    column-gap: 200px;
+}
+.about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.about__item-images {
+    position: relative;
+  max-width: 275px;
+  width: 100%;
+  height: 275px;
+}
+

@@ -33,6 +33,100 @@
   animation: dash 3s linear alternate infinite;
 }
 
+.svg_quiestion-one {
+  left: 25%;
+  top: 32%;
+
+  animation: quiestionAnimOne 1s ease-in alternate infinite;
+
+  @keyframes quiestionAnimOne {
+    from {
+      transform: rotate(15deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  }
+}
+
+.svg_quiestion-two {
+  left: 17%;
+  top: 36%;
+  transform: rotate(-26deg);
+
+  animation: quiestionAnimTwo 0.5s ease-in alternate infinite;
+
+  @keyframes quiestionAnimTwo {
+    from {
+      transform: rotate(-26deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  }
+}
+
+.svg_vectorMan {
+  left: 48%;
+  top: 56%;
+  animation: vectorManAnim 0.5s linear alternate infinite;
+  @keyframes vectorManAnim {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+.svg_vectorOneBakset {
+  left: 12%;
+  top: 32%;
+
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+
+  animation: vectorBakset 1s linear alternate infinite;
+
+  @keyframes vectorBakset {
+    from {
+      stroke-dashoffset: 220;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.svg_vectorTwoBakset {
+  left: 11%;
+  top: 41%;
+
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+
+  animation: vectorBakset 1s linear alternate infinite;
+}
+
+.svg_vectorCar {
+  left: 15%;
+  top: 56%;
+
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: vectorCarAnim 0.5s linear alternate infinite;
+
+  @keyframes vectorCarAnim {
+    from {
+      stroke-dashoffset: 600;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
 .path_heroVector {
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
@@ -41,6 +135,25 @@
   @keyframes heroVector {
     from {
       stroke-dashoffset: 3000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.path_heroVector-boom {
+  fill: none;
+  stroke: rgb(205, 70, 49);
+  stroke-width: 1px;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+
+  animation: heroVectorBoom 1.5s linear forwards;
+
+  @keyframes heroVectorBoom {
+    from {
+      stroke-dashoffset: 250;
     }
     to {
       stroke-dashoffset: 0;

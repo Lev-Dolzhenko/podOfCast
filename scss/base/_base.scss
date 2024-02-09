@@ -37,10 +37,12 @@ a {
   }
 }
 
-.titleH2 {
-  // font-size: clamp();
-  // font-weight: ;
-  // line-height: ;
+.title2 {
+  color: $colorBlack;
+  font-size: 59.3px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
 }
 
 .titleH3 {
@@ -67,5 +69,9 @@ a {
   &_hero {
     text-align: center;
     color: $colorBlackMuted;
+  }
+
+  &_about {
+    text-align: center;
   }
 }
