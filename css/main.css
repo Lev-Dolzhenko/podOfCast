@@ -94,6 +94,8 @@ legend {
 /*FONTS*/
 /*COLORS*/
 /*COLORS*/
+/* CURSOR */
+/* CURSOR */
 /*MEDIA*/
 /*MEDIA*/
 body {
@@ -1438,6 +1440,10 @@ a {
   margin-bottom: 10px;
 }
 
+.content {
+  padding: 140px 0;
+}
+
 .content__title {
   margin-bottom: 20px;
 }
@@ -1572,6 +1578,53 @@ a {
   border-radius: 50%;
   width: 26px;
   height: 26px;
+}
+
+.content__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content__button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  padding: 24px 48px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  -webkit-transition: -webkit-box-shadow 0.1s linear;
+  transition: -webkit-box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
+}
+.content__button button:hover {
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.circle {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 2px solid rgb(205, 70, 49);
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
+  z-index: 10;
 }
 
 .swiper {

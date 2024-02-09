@@ -1,0 +1,12 @@
+.circle {
+    position: fixed;
+    height: $cirlceSize;
+    width: $cirlceSize;
+    border-radius: 100%;
+    border: 2px solid $colorAccent;
+    top: calc($cirlceSize / 2 * -1);
+    left: calc($cirlceSize / 2 * -1);
+    pointer-events: none;
+
+    z-index: 10;
+}
