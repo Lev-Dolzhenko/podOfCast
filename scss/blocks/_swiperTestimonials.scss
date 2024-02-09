@@ -1,0 +1,67 @@
+.swiper-slide_testimonials {
+}
+
+.about__comment_swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px;
+}
+
+.about__person-image_one {
+  background-image: url(/content/main/about/personTwo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__person-image_three {
+  background-image: url(/content/main/about/personThree.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__person-image_four {
+  background-image: url(/content/main/about/personFour.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+
+  margin-top: 65px;
+}
+
+.swiper-button-next-testimonials,
+.swiper-button-prev-testimonials {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid $colorBlack;
+  border-radius: 50%;
+
+  transition: all 0.1s linear;
+
+  svg {
+    path {
+      transition: all 0.1s linear;
+    }
+  }
+
+  &:hover {
+    border-color: $colorAccent;
+    svg {
+      path {
+        stroke: $colorAccent;
+      }
+    }
+  }
+}

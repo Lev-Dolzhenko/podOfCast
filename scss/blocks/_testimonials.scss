@@ -1,0 +1,36 @@
+.swiper_testimonials {
+    position: relative;
+    background-color: $colorBgTwo;
+    padding: 140px 0 105px;
+}
+
+.testimonials__image-boom {
+    position: absolute;
+    left: 277px;
+    top: 71px;
+    animation: image-boomAnim 0.5s ease-out forwards;
+
+    @keyframes image-boomAnim {
+        from {
+            transform: scale(0);
+        }
+        to {
+            ransform: scale(1);
+        }
+    }
+}
+
+.testimonials__title {
+    margin-bottom: 20px;
+}
+.titl2 {
+}
+.title2_testimonials {
+}
+.testimonials__subtitle {
+    margin-bottom: 100px;
+}
+.subtitleP {
+}
+.subtitleP_testimonials {
+}

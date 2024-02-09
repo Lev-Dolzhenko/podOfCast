@@ -136,6 +136,20 @@ a {
   line-height: 120%;
   text-align: center;
 }
+.title2__quote {
+  color: rgb(205, 70, 49);
+  font-size: 95.95px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.title3 {
+  color: rgb(0, 0, 0);
+  font-size: 36.65px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+}
 
 .title5_them {
   color: rgb(129, 173, 200);
@@ -156,6 +170,19 @@ a {
 }
 .subtitleP_about {
   text-align: center;
+}
+.subtitleP_testimonials {
+  color: rgb(77, 77, 77);
+  text-align: center;
+  font-size: 22.65px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.subtitleP_testimonials_swiper {
+  color: rgb(0, 0, 0);
+  font-size: 22.65px;
+  font-weight: 500;
+  line-height: 160%;
 }
 
 .nav-icon-btn {
@@ -771,6 +798,7 @@ a {
 
 .about {
   padding: 140px 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .about__title {
@@ -788,6 +816,7 @@ a {
   -webkit-column-gap: 200px;
      -moz-column-gap: 200px;
           column-gap: 200px;
+  margin-bottom: 120px;
 }
 
 .about__item {
@@ -1043,6 +1072,258 @@ a {
     opacity: 1;
     stroke: #ffd700;
   }
+}
+
+.svg_about {
+  position: absolute;
+}
+
+.svg_about-star {
+  -webkit-animation: identsvg_aboutAnim 2s linear alternate infinite;
+          animation: identsvg_aboutAnim 2s linear alternate infinite;
+  right: -78px;
+  top: -60px;
+}
+@-webkit-keyframes identsvg_aboutAnim {
+  from {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  to {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+}
+@keyframes identsvg_aboutAnim {
+  from {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  to {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+}
+
+.svg_about-vector {
+  bottom: 49px;
+  left: -60px;
+}
+
+.svg_about-vector-path {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  -webkit-animation: about-vector-pathAnim 1s linear alternate infinite;
+          animation: about-vector-pathAnim 1s linear alternate infinite;
+}
+@-webkit-keyframes about-vector-pathAnim {
+  from {
+    stroke-dashoffset: 900;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes about-vector-pathAnim {
+  from {
+    stroke-dashoffset: 900;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.about__comment {
+  position: relative;
+  background-color: rgb(247, 237, 232);
+  padding: 40px 0;
+}
+
+.about__text {
+  max-width: 735px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.about__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+.about__person span {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.about__person-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-image: url(./../../content/main/about/person.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__profession {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+.about__profession strong {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.swiper_testimonials {
+  position: relative;
+  background-color: rgb(237, 243, 247);
+  padding: 140px 0 105px;
+}
+
+.testimonials__image-boom {
+  position: absolute;
+  left: 277px;
+  top: 71px;
+  -webkit-animation: image-boomAnim 0.5s ease-out forwards;
+          animation: image-boomAnim 0.5s ease-out forwards;
+}
+@-webkit-keyframes image-boomAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    ransform: scale(1);
+  }
+}
+@keyframes image-boomAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    ransform: scale(1);
+  }
+}
+
+.testimonials__title {
+  margin-bottom: 20px;
+}
+
+.testimonials__subtitle {
+  margin-bottom: 100px;
+}
+
+.about__comment_swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 40px;
+}
+
+.about__person-image_one {
+  background-image: url(/content/main/about/personTwo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__person-image_three {
+  background-image: url(/content/main/about/personThree.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__person-image_four {
+  background-image: url(/content/main/about/personFour.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  margin-top: 65px;
+}
+
+.swiper-button-next-testimonials,
+.swiper-button-prev-testimonials {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2.5px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.swiper-button-next-testimonials svg path,
+.swiper-button-prev-testimonials svg path {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.swiper-button-next-testimonials:hover,
+.swiper-button-prev-testimonials:hover {
+  border-color: rgb(205, 70, 49);
+}
+.swiper-button-next-testimonials:hover svg path,
+.swiper-button-prev-testimonials:hover svg path {
+  stroke: rgb(205, 70, 49);
 }
 
 .swiper {

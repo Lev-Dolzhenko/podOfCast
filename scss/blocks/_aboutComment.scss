@@ -1,0 +1,64 @@
+.about__comment {
+    position: relative;
+
+  background-color: $colorBg;
+
+  padding: 40px 0;
+}
+.about__quote {
+}
+.title2 {
+}
+.title2__quote {
+}
+.about__text {
+  max-width: 735px;
+  margin: 0 auto;
+
+  margin-bottom: 40px;
+}
+.title3 {
+}
+.title3__quote {
+}
+
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.about__person {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  span {
+    color: $colorBlack;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+  }
+}
+.about__person-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-image: url(./../../content/main/about/person.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__profession {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  strong {
+    color: $colorBlack;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+  }
+}
+.about_profession-image {
+}

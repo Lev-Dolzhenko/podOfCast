@@ -43,12 +43,21 @@ a {
   font-weight: 700;
   line-height: 120%;
   text-align: center;
+
+  &__quote {
+    color: $colorAccent;
+    font-size: 95.95px;
+    font-weight: 700;
+    line-height: 100%;
+  }
 }
 
-.titleH3 {
-  // font-size: clamp();
-  // font-weight: ;
-  // line-height: ;
+.title3 {
+  color: $colorBlack;
+  font-size: 36.65px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
 }
 
 .title5 {
@@ -73,5 +82,20 @@ a {
 
   &_about {
     text-align: center;
+  }
+
+  &_testimonials {
+    color: $colorBlackMuted;
+    text-align: center;
+    font-size: 22.65px;
+    font-weight: 500;
+    line-height: 160%;
+  }
+
+  &_testimonials_swiper {
+    color: $colorBlack;
+    font-size: 22.65px;
+    font-weight: 500;
+    line-height: 160%;
   }
 }
