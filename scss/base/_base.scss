@@ -135,11 +135,30 @@ a {
     padding-top: 10px;
   }
 
-  &_type, &_blog {
+  &_type,
+  &_blog,
+  &_logotype,
+  &_platform,
+  &_apps {
     color: $colorBlackMuted;
     font-size: 14px;
     font-weight: 500;
     line-height: 160%;
     text-align: left;
+  }
+
+  &_platform,
+  &_apps {
+    font-size: 16px;
+  }
+
+  &_cta {
+    color: $colorBlackMuted;
+    font-family: Montserrat Alternates;
+    font-size: 22.65px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
   }
 }
