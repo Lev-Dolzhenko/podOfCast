@@ -69,7 +69,6 @@ a {
   &_content {
     // text-wrap: nowrap;
     transition: color 0.2s linear;
-    
   }
 }
 
@@ -79,6 +78,16 @@ a {
     font-size: 36.65px;
     font-weight: 700;
     line-height: 140%;
+  }
+}
+
+.title6 {
+  font-size: 36.65px;
+  font-weight: 700;
+  line-height: 140%;
+
+  &_type {
+    color: $colorBlack;
   }
 }
 
@@ -124,5 +133,13 @@ a {
   &_content-episode {
     text-align: center;
     padding-top: 10px;
+  }
+
+  &_type, &_blog {
+    color: $colorBlackMuted;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    text-align: left;
   }
 }
