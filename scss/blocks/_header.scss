@@ -25,15 +25,22 @@
   font-weight: 700;
   line-height: 160%;
 
+  transition: color 0.2s linear;
+
   &_row {
     display: flex;
     align-items: center;
     column-gap: 4px;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
+
+}
+
+.header__item_row:hover {
+  cursor: pointer;
+}
+
+.header__link:hover {
+  color: $colorAccent;
 }
 
 .header__item_image {
@@ -70,8 +77,41 @@
     transition: background-color 0.1s linear;
 
     &:hover {
-        background-color: $colorBlack;
-        color: $colorBg;
+      background-color: $colorBlack;
+      color: $colorBg;
     }
   }
 }
+
+.header__item_row {
+  position: relative;
+}
+
+.header__submenu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-weight: 500;
+}
+
+.active {
+  color: $colorAccent;
+}
+
+.rotateSvg {
+  transform: rotate(180deg);
+}
+
+.header__submenu-animation {
+  animation: submenu 0.2s ease-in forwards alternate;
+}
+.header__subitem {
+ &:hover {
+  color: $colorAccent;
+ }
+}
+

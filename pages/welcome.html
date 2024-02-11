@@ -8,12 +8,14 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="/scripts/script.js" defer></script>
     <link rel="stylesheet" href="/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header none1">
@@ -32,12 +34,21 @@
               <li class="header__item">
                 <a class="header__link" href="#!">About</a>
               </li>
-              <li class="header__item header__item_row">
-                More
+              <li id="buttonSubMebu" class="header__item header__item_row">
+                <a href="#!">More</a>
                 <div class="header__item_image">
-                  <img src="/content/header/arrow.svg" alt="subMenu" />
+                  <img
+                    id="iconSubMenu"
+                    src="/content/header/arrow.svg"
+                    alt="subMenu"
+                  />
                 </div>
               </li>
+              <ul id="subMenu" class="header__submenu">
+                <li class="header__subitem"><a href="#!">About</a></li>
+                <li class="header__subitem"><a href="#!">Blog</a></li>
+                <li class="header__subitem"><a href="#!">Pricing</a></li>
+              </ul>
             </ul>
           </nav>
           <div class="header__buttons">
@@ -80,7 +91,6 @@
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
-            <desc>Created with Pixso.</desc>
             <defs />
             <path
               class="path_heroVector"
@@ -93,7 +103,7 @@
             <path
               class="path_heroVector-boom"
               d="M603.233 291.246L602.657 295.288C602.469 296.605 603.594 297.734 604.911 297.552L620.626 295.372C622.746 295.078 623.784 297.871 621.987 299.033L610.309 306.583C608.955 307.459 609.141 309.496 610.632 310.111L618.582 313.393C620.409 314.148 620.151 316.813 618.212 317.203L613.01 318.248C611.834 318.484 611.129 319.694 611.503 320.833L612.98 325.327C613.544 327.044 611.721 328.569 610.13 327.711L603.787 324.291C602.159 323.413 600.314 325.026 600.966 326.756L604.455 336.022C605.212 338.032 602.7 339.66 601.175 338.147L591.312 328.364C590.676 327.733 589.698 327.602 588.918 328.043L577.799 334.334C575.946 335.382 573.956 333.195 575.174 331.449L581.723 322.062C582.322 321.204 582.157 320.028 581.345 319.367L569.928 310.073C568.468 308.885 569.308 306.522 571.19 306.522L579.986 306.522C580.981 306.522 581.824 305.791 581.966 304.807L583.345 295.245C583.643 293.176 586.514 292.894 587.21 294.864L589.444 301.188C590.018 302.811 592.237 303 593.076 301.497L599.507 289.989C600.588 288.054 603.546 289.052 603.233 291.246Z"
-              fill="#CD4631"
+              fill="none"
               fill-opacity="1.000000"
               fill-rule="nonzero"
             />
@@ -466,24 +476,34 @@
       <section class="sponsors none1">
         <div class="container">
           <div class="sponsors__wrapper">
-            <div class="sponsors__text">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="900"
+              class="sponsors__text"
+            >
               <strong>Supported by:</strong>
             </div>
             <div class="sponsors__row">
               <div class="sponsors__row_block">
                 <img
+                  data-aos-duration="900"
+                  data-aos="fade-up"
                   src="/content/main/sponsors/SpotifyIcon.png"
                   alt="SpotifyIcon"
                 />
               </div>
               <div class="sponsors__row_block">
                 <img
+                  data-aos-duration="900"
+                  data-aos="fade-down"
                   src="/content/main/sponsors/GooglePodcastIcon.png"
                   alt="GooglePodcastIcon"
                 />
               </div>
               <div class="sponsors__row_block">
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="900"
                   src="/content/main/sponsors/YoutubeIcon.png"
                   alt="YoutubeIcon"
                 />
@@ -621,7 +641,6 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <desc>Created with Pixso.</desc>
                   <defs />
                   <path
                     id="Vector 1551"
@@ -966,16 +985,16 @@
             </div>
           </div>
           <div class="about__comment">
-            <div class="about__quote">
+            <div data-aos="fade-up" data-aos-duration="900" class="about__quote">
               <h2 class="title2 title2__quote">“</h2>
             </div>
-            <div class="about__text">
+            <div data-aos="fade-up" data-aos-duration="900" class="about__text">
               <h3 class="title3 title3__quote">
                 One of the best daily podcasts that covers every topic on
                 Spotify.
               </h3>
             </div>
-            <div class="about__wrapper">
+            <div data-aos="fade-up" data-aos-duration="800" class="about__wrapper">
               <div class="about__person">
                 <div class="about__person-image"></div>
                 <span>John Smith,</span>
@@ -1195,7 +1214,7 @@
             </p>
           </div>
           <div class="features__grid">
-            <div class="features__card">
+            <div data-aos="fade-down-right" data-aos-offset="400" data-aos-duration="900" class="features__card">
               <div class="features__card-image">
                 <img
                   src="/content/main/features/featuresGrid/scribbleBlue.svg"
@@ -1212,7 +1231,7 @@
                 </p>
               </div>
             </div>
-            <div class="features__card">
+            <div data-aos="fade-down" data-aos-offset="400" data-aos-duration="900" class="features__card">
               <div class="features__card-image">
                 <img
                   src="/content/main/features/featuresGrid/stars.svg"
@@ -1229,7 +1248,7 @@
                 </p>
               </div>
             </div>
-            <div class="features__card">
+            <div data-aos="fade-down-left" data-aos-offset="400" data-aos-duration="900" class="features__card">
               <div class="features__card-image">
                 <img
                   src="/content/main/features/featuresGrid/smile.svg"
@@ -1246,7 +1265,7 @@
                 </p>
               </div>
             </div>
-            <div class="features__card">
+            <div data-aos="fade-up-right"  data-aos-duration="900" class="features__card">
               <div class="features__card-image">
                 <img
                   src="/content/main/features/featuresGrid/smiles.svg"
@@ -1263,7 +1282,7 @@
                 </p>
               </div>
             </div>
-            <div class="features__card">
+            <div data-aos="fade-up"  data-aos-duration="900" class="features__card">
               <div class="features__card-image">
                 <img
                   src="/content/main/features/featuresGrid/fire.svg"
@@ -1282,7 +1301,7 @@
                 </p>
               </div>
             </div>
-            <div class="features__card">
+            <div data-aos="fade-up-left"  data-aos-duration="900" class="features__card">
               <div class="features__card-image">
                 <img
                   src="/content/main/features/featuresGrid/blackStar.svg"
@@ -1316,7 +1335,7 @@
             </p>
           </div>
           <div class="content__grid">
-            <div class="content__item">
+            <div data-aos="flip-up" data-aos-once="true" data-aos-offset="250" data-aos-duration="900" class="content__item">
               <div class="item__grid">
                 <div class="item__grid_img">
                   <img src="/content/main/episodes/imageOne.jpeg" alt="" />
@@ -1361,7 +1380,7 @@
                 </div>
               </div>
             </div>
-            <div class="content__item">
+            <div data-aos="flip-down" data-aos-once="true" data-aos-offset="250" data-aos-duration="900" class="content__item">
               <div class="item__grid">
                 <div class="item__grid_img">
                   <img
@@ -1409,7 +1428,7 @@
                 </div>
               </div>
             </div>
-            <div class="content__item">
+            <div data-aos="flip-up" data-aos-once="true" data-aos-offset="300" data-aos-duration="900" class="content__item">
               <div class="item__grid">
                 <div class="item__grid_img">
                   <img
@@ -1456,7 +1475,7 @@
                 </div>
               </div>
             </div>
-            <div class="content__item">
+            <div data-aos="flip-down" data-aos-once="true" data-aos-offset="300" data-aos-duration="900" class="content__item">
               <div class="item__grid">
                 <div class="item__grid_img">
                   <img
@@ -1504,7 +1523,7 @@
                 </div>
               </div>
             </div>
-            <div class="content__item">
+            <div data-aos="flip-up" data-aos-once="true" data-aos-offset="350" data-aos-duration="900" class="content__item">
               <div class="item__grid">
                 <div class="item__grid_img">
                   <img
@@ -1552,7 +1571,7 @@
                 </div>
               </div>
             </div>
-            <div class="content__item">
+            <div data-aos="flip-down" data-aos-once="true" data-aos-offset="350" data-aos-duration="900" class="content__item">
               <div class="item__grid">
                 <div class="item__grid_img">
                   <img
@@ -1753,7 +1772,7 @@
             <p class="subtitleP subtitleP__blog">News, tips, tricks and more</p>
           </div>
           <div class="blog__row">
-            <div class="blog__card">
+            <div data-aos="fade-right" data-aos-duration="900" class="blog__card">
               <div class="blog__card_image">
                 <img
                   src="/content/main/blog/imageOne.jpeg"
@@ -1784,7 +1803,7 @@
                 </div>
               </div>
             </div>
-            <div class="blog__card">
+            <div data-aos="fade-left" data-aos-duration="900" class="blog__card">
               <div class="blog__card_image">
                 <img src="/content/main/blog/imageTwo.jpeg" alt="" />
               </div>
@@ -1835,17 +1854,27 @@
               <button>DOWNLOAD NOW</button>
             </div>
             <div class="cta__subtitleSpan">
-              <span class="subtitleSpan subtitleSpan_cta">Content also available on:</span>
+              <span class="subtitleSpan subtitleSpan_cta"
+                >Content also available on:</span
+              >
             </div>
             <div class="cta__socials">
-              <img src="/content/main/cta/logoOne.svg" alt="logoOne">
-              <img src="/content/main/cta/logoTwo.svg" alt="logoTwo">
-              <img src="/content/main/cta/logoThree.svg" alt="logoThree">
+              <img src="/content/main/cta/logoOne.svg" alt="logoOne" />
+              <img src="/content/main/cta/logoTwo.svg" alt="logoTwo" />
+              <img src="/content/main/cta/logoThree.svg" alt="logoThree" />
             </div>
           </div>
         </div>
-        <img class="cta__phoneLeft" src="/content/main/cta/phoneLeft.png" alt="phoneLeft">
-        <img class="cta__phoneRight" src="/content/main/cta/phoneRight.png" alt="phoneRight">
+        <img
+          class="cta__phoneLeft"
+          src="/content/main/cta/phoneLeft.png"
+          alt="phoneLeft"
+        />
+        <img
+          class="cta__phoneRight"
+          src="/content/main/cta/phoneRight.png"
+          alt="phoneRight"
+        />
       </section>
     </main>
     <footer class="footer none1">

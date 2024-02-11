@@ -78,12 +78,9 @@
 
 .cta__phoneLeft {
   position: absolute;
-  //   left: -5%;
-  //   bottom: -40%;
+  opacity: 0;
   transform: translate(-21%, -34%);
   width: 500px;
-
-  animation: phoneLeftAnim 1s ease-out;
 
   @keyframes phoneLeftAnim {
     from {
@@ -95,19 +92,30 @@
   }
 }
 
+.cta__phoneLeft-animation {
+  animation: phoneLeftAnim 1s ease-out;
+  opacity: 1;
+}
+
 .cta__phoneRight {
   position: absolute;
   width: 600px;
+  opacity: 0;
   transform: translate(184%, -71%);
-
-  animation: phoneRightAnim 1s ease-out ;
 
   @keyframes phoneRightAnim {
     from {
+      opacity: 0;
       transform: translate(242%, -71%);
     }
     to {
+      opacity: 1;
       transform: translate(184%, -71%);
     }
   }
+}
+
+.cta__phoneRight-animation {
+  animation: phoneRightAnim 1s ease-out;
+  opacity: 1;
 }

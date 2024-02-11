@@ -1,3 +1,62 @@
+// submenu
+
+const buttonSubMebu = document.getElementById("buttonSubMebu");
+const subMenu = document.getElementById("subMenu");
+const iconSubMenu = document.getElementById("iconSubMenu");
+
+buttonSubMebu.addEventListener("click", function () {
+  subMenu.classList.toggle("header__submenu-animation");
+  buttonSubMebu.classList.toggle("active");
+  iconSubMenu.classList.toggle("rotateSvg");
+});
+
+// about animations
+
+const svgMan = document.querySelector(".svg_man"); // svg_man-animation
+
+const svgCloudOne = document.querySelector(".svg_cloudOne"); //svg_cloudOne-animation
+const svgCloudTwo = document.querySelector(".svg_cloudTwo"); //svg_cloudTwo-animation
+const svgLargeCloud = document.querySelector(".svg_largeCloud"); //svg_largeCloud-animation
+
+const svgLamp = document.querySelector(".svg_lamp"); // svg_lamp-animation
+
+const ctaPhoneLeft = document.querySelector(".cta__phoneLeft"); // cta__phoneLeft-animation
+const ctaPhoneRight = document.querySelector(".cta__phoneRight"); // cta__phoneRight-animation
+
+window.addEventListener("scroll", function () {
+  const scrollY = this.window.scrollY;
+  console.log(scrollY);
+  if (scrollY >= 1200) {
+    svgMan.classList.add("svg_man-animation");
+
+    svgCloudOne.classList.add("svg_cloudOne-animation");
+    svgCloudTwo.classList.add("svg_cloudTwo-animation");
+    svgLargeCloud.classList.add("svg_largeCloud-animation");
+
+    svgLamp.classList.add("svg_lamp-animation");
+  } else {
+    svgMan.classList.remove("svg_man-animation");
+
+    svgCloudOne.classList.remove("svg_cloudOne-animation");
+    svgCloudTwo.classList.remove("svg_cloudTwo-animation");
+    svgLargeCloud.classList.remove("svg_largeCloud-animation");
+
+    svgLamp.classList.remove("svg_lamp-animation");
+  }
+
+  if (scrollY >= 8190) {
+    ctaPhoneRight.classList.add("cta__phoneRight-animation");
+  } else {
+    ctaPhoneRight.classList.remove("cta__phoneRight-animation");
+  }
+
+  if (scrollY >= 8390) {
+    ctaPhoneLeft.classList.add("cta__phoneLeft-animation");
+  } else {
+    ctaPhoneLeft.classList.remove("cta__phoneLeft-animation");
+  }
+});
+
 // circle cursor
 
 const circleElement = document.querySelector(".circle");
@@ -54,10 +113,10 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
-  //   autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
-  //   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
+  },
 });
 
 var swiper = new Swiper(".mySwiper_testiomonials", {
@@ -73,3 +132,7 @@ var swiper = new Swiper(".mySwiper_testiomonials", {
   //     disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
   //   },
 });
+
+// aos init
+
+AOS.init();

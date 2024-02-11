@@ -6,8 +6,6 @@
   left: 43px;
   bottom: 16px;
 
-  animation: manAnim 1s ease-out forwards;
-
   @keyframes manAnim {
     from {
       transform: scale(0);
@@ -18,11 +16,13 @@
   }
 }
 
+.svg_man-animation {
+  animation: manAnim 1s ease-out forwards;
+}
+
 .svg_cloudOne {
   left: 120px;
   bottom: 104px;
-
-  animation: cloudAnim 1s linear forwards;
 
   @keyframes cloudAnim {
     from {
@@ -34,17 +34,27 @@
   }
 }
 
+.svg_cloudOne-animation {
+  animation: cloudAnim 1s linear forwards;
+}
+
 .svg_cloudTwo {
   left: 152px;
   bottom: 108px;
+}
 
+.svg_cloudTwo-animation {
   animation: cloudAnim 1s linear forwards;
 }
 
 .svg_largeCloud {
+  opacity: 0;
   right: 0;
   top: 0;
+}
 
+.svg_largeCloud-animation {
+  opacity: 1;
   animation: cloudAnim 1s ease-in forwards;
 }
 
@@ -56,7 +66,9 @@
 .svg_q-path {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
+
   animation: q-pathAnim 2s ease-in alternate infinite;
+
 
   @keyframes q-pathAnim {
     from {
@@ -145,7 +157,24 @@
   position: absolute;
   left: 63px;
   top: 58px;
+  opacity: 0;
+
+  @keyframes svg_lampAnim {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
 }
+
+.svg_lamp-animation {
+  animation: svg_lampAnim 1s ease-out;
+  opacity: 1;
+}
+
+
 
 .svg_lamp_main-path {
   animation: turnLampMain 1s linear alternate infinite;

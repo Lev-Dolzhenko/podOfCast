@@ -1,0 +1,17 @@
+// SUBMENU
+
+@keyframes submenu {
+  from {
+    pointer-events: none;
+    visibility: hidden;
+    transform: translate(247px, 25px);
+    opacity: 0;
+  }
+  to {
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(247px, 50px);
+    opacity: 1;
+  }
+}
+

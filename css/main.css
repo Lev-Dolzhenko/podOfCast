@@ -1,5 +1,37 @@
 /* BASE */
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,600,700);
+@-webkit-keyframes submenu {
+  from {
+    pointer-events: none;
+    visibility: hidden;
+    -webkit-transform: translate(247px, 25px);
+            transform: translate(247px, 25px);
+    opacity: 0;
+  }
+  to {
+    pointer-events: auto;
+    visibility: visible;
+    -webkit-transform: translate(247px, 50px);
+            transform: translate(247px, 50px);
+    opacity: 1;
+  }
+}
+@keyframes submenu {
+  from {
+    pointer-events: none;
+    visibility: hidden;
+    -webkit-transform: translate(247px, 25px);
+            transform: translate(247px, 25px);
+    opacity: 0;
+  }
+  to {
+    pointer-events: auto;
+    visibility: visible;
+    -webkit-transform: translate(247px, 50px);
+            transform: translate(247px, 50px);
+    opacity: 1;
+  }
+}
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -206,6 +238,7 @@ a {
   font-size: 22.65px;
   font-weight: 500;
   line-height: 160%;
+  text-align: left;
 }
 .subtitleP_features {
   text-align: center;
@@ -347,6 +380,8 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 160%;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 .header__item_row {
   display: -webkit-box;
@@ -359,8 +394,13 @@ a {
      -moz-column-gap: 4px;
           column-gap: 4px;
 }
+
 .header__item_row:hover {
   cursor: pointer;
+}
+
+.header__link:hover {
+  color: rgb(205, 70, 49);
 }
 
 .header__item_image {
@@ -411,6 +451,43 @@ a {
 .header__button button:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(247, 237, 232);
+}
+
+.header__item_row {
+  position: relative;
+}
+
+.header__submenu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+  font-weight: 500;
+}
+
+.active {
+  color: rgb(205, 70, 49);
+}
+
+.rotateSvg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header__submenu-animation {
+  -webkit-animation: submenu 0.2s ease-in forwards alternate;
+          animation: submenu 0.2s ease-in forwards alternate;
+}
+
+.header__subitem:hover {
+  color: rgb(205, 70, 49);
 }
 
 .hero {
@@ -774,7 +851,6 @@ a {
 }
 
 .path_heroVector-boom {
-  fill: none;
   stroke: rgb(205, 70, 49);
   stroke-width: 1px;
   stroke-dasharray: 250;
@@ -899,8 +975,6 @@ a {
 .svg_man {
   left: 43px;
   bottom: 16px;
-  -webkit-animation: manAnim 1s ease-out forwards;
-          animation: manAnim 1s ease-out forwards;
 }
 @-webkit-keyframes manAnim {
   from {
@@ -923,11 +997,14 @@ a {
   }
 }
 
+.svg_man-animation {
+  -webkit-animation: manAnim 1s ease-out forwards;
+          animation: manAnim 1s ease-out forwards;
+}
+
 .svg_cloudOne {
   left: 120px;
   bottom: 104px;
-  -webkit-animation: cloudAnim 1s linear forwards;
-          animation: cloudAnim 1s linear forwards;
 }
 @-webkit-keyframes cloudAnim {
   from {
@@ -950,16 +1027,29 @@ a {
   }
 }
 
+.svg_cloudOne-animation {
+  -webkit-animation: cloudAnim 1s linear forwards;
+          animation: cloudAnim 1s linear forwards;
+}
+
 .svg_cloudTwo {
   left: 152px;
   bottom: 108px;
+}
+
+.svg_cloudTwo-animation {
   -webkit-animation: cloudAnim 1s linear forwards;
           animation: cloudAnim 1s linear forwards;
 }
 
 .svg_largeCloud {
+  opacity: 0;
   right: 0;
   top: 0;
+}
+
+.svg_largeCloud-animation {
+  opacity: 1;
   -webkit-animation: cloudAnim 1s ease-in forwards;
           animation: cloudAnim 1s ease-in forwards;
 }
@@ -1078,6 +1168,33 @@ a {
   position: absolute;
   left: 63px;
   top: 58px;
+  opacity: 0;
+}
+@-webkit-keyframes svg_lampAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes svg_lampAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.svg_lamp-animation {
+  -webkit-animation: svg_lampAnim 1s ease-out;
+          animation: svg_lampAnim 1s ease-out;
+  opacity: 1;
 }
 
 .svg_lamp_main-path {
@@ -1502,8 +1619,10 @@ a {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 12px;
   background-color: rgb(255, 255, 255);
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear, -webkit-box-shadow 0.2s linear !important;
+  transition: all 0.4s linear, -webkit-box-shadow 0.2s linear !important;
+  transition: all 0.4s linear, box-shadow 0.2s linear !important;
+  transition: all 0.4s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear !important;
 }
 .content__item:hover {
   cursor: pointer;
@@ -1879,10 +1998,10 @@ a {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 8px;
   background: rgb(255, 255, 255);
-  -webkit-transition: -webkit-box-shadow 0.2s linear;
-  transition: -webkit-box-shadow 0.2s linear;
-  transition: box-shadow 0.2s linear;
-  transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -webkit-transition: all 0.5s linear, -webkit-box-shadow 0.2s ease-out !important;
+  transition: all 0.5s linear, -webkit-box-shadow 0.2s ease-out !important;
+  transition: all 0.5s linear, box-shadow 0.2s ease-out !important;
+  transition: all 0.5s linear, box-shadow 0.2s ease-out, -webkit-box-shadow 0.2s ease-out !important;
 }
 .blog__card:hover {
   cursor: pointer;
@@ -2052,11 +2171,10 @@ a {
 
 .cta__phoneLeft {
   position: absolute;
+  opacity: 0;
   -webkit-transform: translate(-21%, -34%);
           transform: translate(-21%, -34%);
   width: 500px;
-  -webkit-animation: phoneLeftAnim 1s ease-out;
-          animation: phoneLeftAnim 1s ease-out;
 }
 @-webkit-keyframes phoneLeftAnim {
   from {
@@ -2079,33 +2197,48 @@ a {
   }
 }
 
+.cta__phoneLeft-animation {
+  -webkit-animation: phoneLeftAnim 1s ease-out;
+          animation: phoneLeftAnim 1s ease-out;
+  opacity: 1;
+}
+
 .cta__phoneRight {
   position: absolute;
   width: 600px;
+  opacity: 0;
   -webkit-transform: translate(184%, -71%);
           transform: translate(184%, -71%);
-  -webkit-animation: phoneRightAnim 1s ease-out;
-          animation: phoneRightAnim 1s ease-out;
 }
 @-webkit-keyframes phoneRightAnim {
   from {
+    opacity: 0;
     -webkit-transform: translate(242%, -71%);
             transform: translate(242%, -71%);
   }
   to {
+    opacity: 1;
     -webkit-transform: translate(184%, -71%);
             transform: translate(184%, -71%);
   }
 }
 @keyframes phoneRightAnim {
   from {
+    opacity: 0;
     -webkit-transform: translate(242%, -71%);
             transform: translate(242%, -71%);
   }
   to {
+    opacity: 1;
     -webkit-transform: translate(184%, -71%);
             transform: translate(184%, -71%);
   }
+}
+
+.cta__phoneRight-animation {
+  -webkit-animation: phoneRightAnim 1s ease-out;
+          animation: phoneRightAnim 1s ease-out;
+  opacity: 1;
 }
 
 .footer {
