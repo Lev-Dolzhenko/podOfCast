@@ -5,13 +5,16 @@
 .svg_man {
   left: 43px;
   bottom: 16px;
+  opacity: 0;
 
   @keyframes manAnim {
     from {
       transform: scale(0);
+      opacity: 0;
     }
     to {
       transform: scale(1);
+      opacity: 1;
     }
   }
 }

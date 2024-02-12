@@ -2,6 +2,8 @@
   position: relative;
   overflow: hidden;
 
+  z-index: 2;
+
   background-color: $colorBgTwo;
 
   padding: 140px 0;
@@ -82,6 +84,8 @@
   transform: translate(-21%, -34%);
   width: 500px;
 
+  z-index: -1;
+
   @keyframes phoneLeftAnim {
     from {
       transform: translate(-103%, -34%);
@@ -101,16 +105,20 @@
   position: absolute;
   width: 600px;
   opacity: 0;
-  transform: translate(184%, -71%);
+  // transform: translate(184%, -71%);
+  right: -12%;
+  top: 111px;
+
+  z-index: -1;
 
   @keyframes phoneRightAnim {
     from {
       opacity: 0;
-      transform: translate(242%, -71%);
+      right: -39%;
     }
     to {
       opacity: 1;
-      transform: translate(184%, -71%);
+      right: -12%;
     }
   }
 }

@@ -115,3 +115,24 @@
  }
 }
 
+#burgerIcon {
+  display: none ;
+}
+
+@include mediaTablet {
+  .header__nav {
+    display: none;
+  }
+
+  .header__buttons {
+    display: none;
+  }
+
+  #burgerIcon {
+    display: block;
+  }
+
+  .header__row {
+    justify-content: space-between;
+  }
+}

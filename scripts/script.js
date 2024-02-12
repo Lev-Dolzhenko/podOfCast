@@ -25,7 +25,7 @@ const ctaPhoneRight = document.querySelector(".cta__phoneRight"); // cta__phoneR
 
 window.addEventListener("scroll", function () {
   const scrollY = this.window.scrollY;
-  console.log(scrollY);
+  // console.log(scrollY);
   if (scrollY >= 1200) {
     svgMan.classList.add("svg_man-animation");
 
@@ -57,6 +57,28 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// submenu mobile
+
+const subMenuButton = document.getElementById("subMenuButton");
+const subMenuMobile = document.getElementById("subMenuMobile");
+const iconSubMenuMobile = document.getElementById("iconSubMenuMobile");
+
+subMenuButton.addEventListener("click", function () {
+  subMenuMobile.classList.toggle("subItem_mobile-animation");
+  iconSubMenuMobile.classList.toggle("rotateSvg");
+});
+
+// show/hide mobile menu
+
+const overlay = document.querySelector(".overlay");
+const mobileNav = document.querySelector(".mobile__nav");
+const burgerIcon = document.getElementById("burgerButton");
+
+burgerIcon.addEventListener("click", function () {
+  mobileNav.classList.toggle("mobileNav-animation");
+  overlay.classList.toggle("mobileNav-animation");
+});
+
 // circle cursor
 
 const circleElement = document.querySelector(".circle");
@@ -73,7 +95,7 @@ window.addEventListener("mousemove", (e) => {
   mouse.y = e.y;
 });
 
-const speed = 0.17;
+const speed = 0.8;
 
 // Start animation
 const tick = () => {
