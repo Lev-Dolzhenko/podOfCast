@@ -3,7 +3,7 @@
 
   background-color: $colorBg;
 
-  padding: 40px 0;
+  padding: clamp(20px, 0.795rem + 2.27vw, 40px) 10px;
 }
 .about__quote {
 }
@@ -35,7 +35,7 @@
 
   span {
     color: $colorBlack;
-    font-size: 14px;
+    font-size: clamp(8px, 0.364rem + 0.68vw, 14px);
     font-weight: 500;
     line-height: 160%;
   }
@@ -55,7 +55,7 @@
   column-gap: 8px;
   strong {
     color: $colorBlack;
-    font-size: 14px;
+    font-size: clamp(8px, 0.364rem + 0.68vw, 14px);
     font-weight: 700;
     line-height: 160%;
   }

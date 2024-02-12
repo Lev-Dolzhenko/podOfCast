@@ -11,7 +11,7 @@
 .hero__title {
   max-width: 550px;
 
-  margin-bottom: 40px;
+  margin-bottom: clamp(10px, -0.057rem + 3.41vw, 40px);
 }
 
 .title1 {
@@ -22,7 +22,7 @@
 .hero__subtitle {
   max-width: 313px;
 
-  margin-bottom: 60px;
+  margin-bottom: clamp(30px, 1.193rem + 3.41vw, 60px);
 }
 
 .subtitleP {
@@ -39,7 +39,7 @@
     border-radius: 8px;
     background-color: $colorBlack;
 
-    padding: 24px 48px;
+    padding: clamp(12px, 0.477rem + 1.36vw, 24px) clamp(24px, 0.955rem + 2.73vw, 48px);
 
     color: $colorWhite;
     font-size: 14px;
@@ -52,4 +52,8 @@
       box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
     }
   }
+}
+
+@include semiTablet { 
+  
 }

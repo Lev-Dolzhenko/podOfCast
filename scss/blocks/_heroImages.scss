@@ -7,6 +7,8 @@
   left: -304px;
   top: 70px;
   z-index: -1;
+
+  width: clamp(546px, 32.67rem + 7.27vw, 610px);
 }
 
 .hero__stars {
@@ -40,3 +42,10 @@
   bottom: 0px;
 }
 
+@include semiTablet { 
+  .hero__stars {
+    display: none;
+  }
+}
+
+//546

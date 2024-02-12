@@ -135,10 +135,26 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
+  // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
 });
 
 var swiper = new Swiper(".mySwiper_testiomonials", {
@@ -149,11 +165,13 @@ var swiper = new Swiper(".mySwiper_testiomonials", {
     nextEl: ".swiper-button-next-testimonials",
     prevEl: ".swiper-button-prev-testimonials",
   },
+});
+
+
   //   autoplay: {
   //     delay: 3000,
   //     disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
   //   },
-});
 
 // aos init
 
