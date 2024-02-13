@@ -13,6 +13,8 @@
 
   align-self: flex-end;
 
+  text-align: center;
+
   padding: 0 17px;
 
 }
@@ -33,3 +35,15 @@
 .subtitleP_features {
 }
 
+
+@media screen and (max-width: 1150px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include semiTablet {
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}

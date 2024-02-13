@@ -1,7 +1,7 @@
 .swiper_testimonials {
     position: relative;
     background-color: $colorBgTwo;
-    padding: 140px 0 105px;
+    padding: clamp(80px, 3.636rem + 6.82vw, 140px) 0 105px;
 }
 
 .testimonials__image-boom {
@@ -23,14 +23,33 @@
 .testimonials__title {
     margin-bottom: 20px;
 }
-.titl2 {
-}
-.title2_testimonials {
-}
+
 .testimonials__subtitle {
     margin-bottom: 100px;
 }
-.subtitleP {
+
+
+.svg_scribbleBlackTestimonials {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8%;
+    z-index: 1;
 }
-.subtitleP_testimonials {
+
+.svg_scribbleBlackTestimonials-path {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+}
+
+.svg_scribbleBlackTestimonials-path-animation {
+    animation: scribbleBlackTestimonialsAnim 1s linear forwards;
+}
+
+@keyframes scribbleBlackTestimonialsAnim {
+    from {
+        stroke-dashoffset: 800;
+    } to {
+        stroke-dashoffset: 0;
+    }
 }

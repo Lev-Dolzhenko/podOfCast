@@ -1,5 +1,6 @@
 .swiper_theme {
-    margin-bottom: 120px;
+  position: relative;
+    margin-bottom: clamp(60px, 2.386rem + 6.82vw, 120px);
 }
 
 .swiper-slide_theme {
@@ -48,3 +49,4 @@
   justify-content: end;
   column-gap: 10px;
 }
+

@@ -1,12 +1,13 @@
 .sponsors {
-    margin-bottom: 140px;
+  position: relative;
+  margin-bottom: clamp(80px, 3.636rem + 6.82vw, 140px);
 }
 
 .sponsors__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-//   column-gap: 132px;
+  //   column-gap: 132px;
 
   padding: 20px 0;
 
@@ -18,16 +19,43 @@
   font-size: 22.65px;
   font-weight: 700;
   line-height: 140%;
+  text-wrap: nowrap;
 }
 .sponsors__row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: 20px;
+  width: 100%;
 }
 .sponsors__row_block {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   padding: 20px 30px;
 
-  width: 275px;
+  max-width: 275px;
+  width: 100%;
+}
+
+
+
+@include mediaTablet {
+  .sponsors__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@include semiTablet {
+  .sponsors__row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sponsors__wrapper { 
+    justify-content: center;
+  }
+
+  .sponsors__row_block {
+    justify-self: center;
+  }
 }

@@ -29,12 +29,16 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(255,255,255,0.6);
 
   opacity: 0;
   visibility: hidden;
 
   z-index: 20;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .title1 {
@@ -76,7 +80,7 @@ a {
 
 .title4 {
   color: $colorBlack;
-  font-size: 22.65px;
+  font-size: clamp(18px, 1.034rem + 0.45vw, 22px);
   font-weight: 700;
   line-height: 140%;
 
@@ -96,7 +100,7 @@ a {
 }
 
 .title6 {
-  font-size: 36.65px;
+  font-size: clamp(25px, 0.886rem + 1.82vw, 36px);
   font-weight: 700;
   line-height: 140%;
 
@@ -156,7 +160,7 @@ a {
   &_platform,
   &_apps {
     color: $colorBlackMuted;
-    font-size: 14px;
+    font-size: clamp(12px, 0.705rem + 0.23vw, 14px);
     font-weight: 500;
     line-height: 160%;
     text-align: left;
@@ -170,7 +174,7 @@ a {
   &_cta {
     color: $colorBlackMuted;
     font-family: Montserrat Alternates;
-    font-size: 22.65px;
+    font-size: clamp(15px, 0.778rem + 0.8vw, 22px);
     font-weight: 500;
     line-height: 160%;
     letter-spacing: 0%;

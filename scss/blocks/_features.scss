@@ -1,5 +1,9 @@
 .features {
-  padding: 140px 0;
+  position: relative;
+
+  overflow: hidden;
+
+  padding: clamp(80px, 3.636rem + 6.82vw, 140px) 0;
 
   background-color: $colorWhite;
 }
@@ -48,5 +52,30 @@
     &:hover {
       box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
     }
+  }
+}
+
+.svg_features {
+  position: absolute;
+  left: 50%;
+  top: -80px;
+  z-index: 3;
+  transform: translateX(-50%);
+}
+
+.svg_features-path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.svg_features-path-animation {
+  animation: svg_featuresAnim 1s linear forwards;
+}
+
+@keyframes svg_featuresAnim {
+  from {
+    stroke-dashoffset: 500;
+  } to {
+    stroke-dashoffset: 0;
   }
 }

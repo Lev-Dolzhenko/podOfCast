@@ -1,5 +1,6 @@
 .about {
-  padding: 140px 0;
+  position: relative;
+  padding: clamp(80px, 3.636rem + 6.82vw, 140px) 0;
 
   background-color: $colorWhite;
 }
@@ -13,10 +14,10 @@
 .about__row {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     column-gap: 200px;
 
-    margin-bottom: 120px;
+    margin-bottom: clamp(60px, 2.386rem + 6.82vw, 120px);
 }
 .about__item {
     display: flex;
@@ -29,5 +30,64 @@
   max-width: 275px;
   width: 100%;
   height: 275px;
+
 }
 
+.svg_scribbleRed-about {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.svg_scribbleRed-About-path {
+  stroke-dashoffset: 500;
+  stroke-dasharray: 500;
+}
+
+.svg_scribbleRed-About-path-animation {
+  animation: svg_scribbleRed-aboutAnim 1s linear forwards;
+}
+
+@keyframes svg_scribbleRed-aboutAnim {
+  from {
+    stroke-dasharray: 0;
+  } to {
+    stroke-dasharray: 500;
+  }
+}
+
+@include mediaTablet {
+  .about__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+.svg_scribbleRed {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -80px;
+  z-index: 1;
+}
+
+.svg_scribbleRed-path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.svg_scribbleRed-path-Animation {
+  animation: scribble 1s linear forwards;
+}
+
+@keyframes scribble {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

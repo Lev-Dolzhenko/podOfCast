@@ -4,10 +4,12 @@ const buttonSubMebu = document.getElementById("buttonSubMebu");
 const subMenu = document.getElementById("subMenu");
 const iconSubMenu = document.getElementById("iconSubMenu");
 
+
 buttonSubMebu.addEventListener("click", function () {
-  subMenu.classList.toggle("header__submenu-animation");
+  subMenu.classList.toggle("header__xsubmenu-animation");
   buttonSubMebu.classList.toggle("active");
   iconSubMenu.classList.toggle("rotateSvg");
+
 });
 
 // about animations
@@ -22,6 +24,15 @@ const svgLamp = document.querySelector(".svg_lamp"); // svg_lamp-animation
 
 const ctaPhoneLeft = document.querySelector(".cta__phoneLeft"); // cta__phoneLeft-animation
 const ctaPhoneRight = document.querySelector(".cta__phoneRight"); // cta__phoneRight-animation
+
+const scribbleSponsors = document.getElementById("scribble-sponsors");
+const scribbleBlackTestimonials = document.getElementById(
+  "scribbleBlackTestimonials"
+);
+const scribbleAboutPath = document.getElementById("scribbleAboutPath");
+const featuresPath = document.getElementById("svg_features-path");
+const scribbleContentPath = document.getElementById("scribbleContentPath");
+const pathBlog = document.getElementById("path_blog");
 
 window.addEventListener("scroll", function () {
   const scrollY = this.window.scrollY;
@@ -55,6 +66,46 @@ window.addEventListener("scroll", function () {
   } else {
     ctaPhoneLeft.classList.remove("cta__phoneLeft-animation");
   }
+
+  if (scrollY >= 700) {
+    scribbleSponsors.classList.add("svg_scribbleRed-path-Animation");
+  } else {
+    scribbleSponsors.classList.remove("svg_scribbleRed-path-Animation");
+  }
+
+  if (scrollY >= 2900) {
+    scribbleBlackTestimonials.classList.add(
+      "svg_scribbleBlackTestimonials-path-animation"
+    );
+  } else {
+    scribbleBlackTestimonials.classList.remove(
+      "svg_scribbleBlackTestimonials-path-animation"
+    );
+  }
+
+  if (scrollY >= 1960) {
+    scribbleAboutPath.classList.add("svg_scribbleRed-path-Animation");
+  } else {
+    scribbleAboutPath.classList.remove("svg_scribbleRed-path-Animation");
+  }
+
+  if (scrollY >= 4120) {
+    featuresPath.classList.add("svg_features-path-animation");
+  } else {
+    featuresPath.classList.remove("svg_features-path-animation");
+  }
+
+  if (scrollY >= 5545) {
+    scribbleContentPath.classList.add("svg_scribble-content-animation");
+  } else {
+    scribbleContentPath.classList.remove("svg_scribble-content-animation");
+  }
+
+  if (scrollY >= 8050) {
+    pathBlog.classList.add("path_blog-animation");
+  } else {
+    pathBlog.classList.remove("path_blog-animation");
+  }
 });
 
 // submenu mobile
@@ -77,6 +128,7 @@ const burgerIcon = document.getElementById("burgerButton");
 burgerIcon.addEventListener("click", function () {
   mobileNav.classList.toggle("mobileNav-animation");
   overlay.classList.toggle("mobileNav-animation");
+  document.body.classList.toggle('overflow')
 });
 
 // circle cursor
@@ -143,7 +195,7 @@ var swiper = new Swiper(".mySwiper", {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     640: {
       slidesPerView: 2,
@@ -152,9 +204,9 @@ var swiper = new Swiper(".mySwiper", {
     // when window width is >= 640px
     1000: {
       slidesPerView: 3,
-      spaceBetween: 40
-    }
-  }
+      spaceBetween: 40,
+    },
+  },
 });
 
 var swiper = new Swiper(".mySwiper_testiomonials", {
@@ -165,13 +217,24 @@ var swiper = new Swiper(".mySwiper_testiomonials", {
     nextEl: ".swiper-button-next-testimonials",
     prevEl: ".swiper-button-prev-testimonials",
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  },
 });
 
-
-  //   autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
-  //   },
+//   autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: false, // Остановить автопрокрутку при взаимодействии пользователя
+//   },
 
 // aos init
 

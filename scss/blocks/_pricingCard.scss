@@ -27,7 +27,8 @@
   &::after {
     position: absolute;
     right: 0;
-    top: 13px;
+    top: 50%;
+    transform: translateY(-50%);
 
     content: "MOST POPULAR";
     color: $colorWhite;
@@ -50,7 +51,7 @@
 .type__row {
   display: flex;
   align-items: center;
-  column-gap: 71px;
+  justify-content: space-between;
 }
 .type__button {
   button {
@@ -159,5 +160,22 @@
     to {
       stroke-dashoffset: 0;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+ .pricing__row {
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+ }
+ .type__row {
+  flex-wrap: wrap;
+  row-gap: 10px;
+ }
+}
+
+@media screen and (max-width: 360px) {
+  .type_popular::after {
+    display: none;
   }
 }

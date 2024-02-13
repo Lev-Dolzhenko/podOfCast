@@ -1,12 +1,41 @@
 .blog {
-    padding: 140px 0;
-    background-color: $colorWhite;
+  padding: clamp(80px, 3.636rem + 6.82vw, 140px) 0;
+  position: relative;
+  background-color: $colorWhite;
+
+  // overflow: hidden;
 }
 
 .blog__title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .blog__subtitleP {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.svg_blog {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.path_blog {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+
+.path_blog-animation {
+    animation: path_blogAnim 1s linear forwards;
+}
+
+@keyframes path_blogAnim {
+    from {
+        stroke-dashoffset: 500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }

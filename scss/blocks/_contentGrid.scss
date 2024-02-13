@@ -134,3 +134,24 @@
         }
       }
 }
+
+@include mediaTablet {
+  .content__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include semiTablet {
+  .item__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item__grid_text p {
+    text-align: left !important;
+  }
+
+  .item__flex {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}

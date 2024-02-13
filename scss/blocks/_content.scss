@@ -1,15 +1,37 @@
-.content {padding: 140px 0;
+.content {
+  position: relative;
+  padding: clamp(80px, 3.636rem + 6.82vw, 140px) 0;
 }
-.container {
-}
+
 .content__title {
   margin-bottom: 20px;
 }
 
 .content__subtitleP {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
-.subtitleP {
+
+.svg_scribble-content {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translateX(-50%);
 }
-.subtitleP_content {
+
+.scribble-content-path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
 }
+
+.svg_scribble-content-animation {
+  animation: svg_scribble-contentAnim 1s linear forwards;
+}
+
+@keyframes svg_scribble-contentAnim {
+  from {
+    stroke-dashoffset: 500;
+  } to {
+    stroke-dashoffset: 0;
+  }
+}
+
